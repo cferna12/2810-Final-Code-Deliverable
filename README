@@ -1,0 +1,21 @@
+Each algorithm is classed into its own file depending on the approach used. For example, all DP approaches are in the same file, each algorithm having its own function. Similarly, bitwise algorithms are in the same file, each with its own function. 
+There is also a preprocessing file that is used by every file to the extract relevant pattern, text, gap penalty, and transition matrix information. In addition, the preproccesing has the alphabet bit mask precomputations function that is used by th bitwise algorithms.
+\\Inputs to the DP run command are as follows:\\
+1) A path to a file containing both the text and the pattern, each on its own line\\
+2) Path to a .m file containing a scoring matrix for matching/mismatching (Standard is 0 for match and penalty of 1 for mismatch)
+3) The k error threshold
+4) Gap penalty
+5) U: if using Ukkonen's cut-off heuristic, any other input to do naive
+Output: \\
+Index, k value, and the alignment for each approximate occurrence. This data is also
+saved into a dictionary, with index as a key and [k, s1, s2] as the value, where k is the number of errors and s1,s2 are the aligned sequences 
+\\
+Inputs for the bitwise run command are as follows: \\
+1) A path to a file containing both the text and the pattern, each on its own line
+2) The alphabet
+3) The k error threshold (if 0, then Shift-Or algorithm, otherwise Myers' BPM)
+Output:
+A list of indices where a matching occurrence ends
+
+Compare.py handles testing runtimes on large files based on different k and m values. 
+To generate graphs, using sh doesn't seem to work, so running the file as normal should do the trick. 
