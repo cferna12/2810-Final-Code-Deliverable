@@ -1,4 +1,4 @@
-Each algorithm is classed into its own file depending on the approach used. For example, all DP approaches are in the same file, each algorithm having its own function. Similarly, bitwise algorithms are in the same file, each with its own function. 
+Each algorithm is classed into its own file depending on the approach used. For example, all naive DP approaches are in the same file, each algorithm having its own function. Similarly, bitwise algorithms are in the same file, each with its own function. 
 There is also a preprocessing file that is used by every file to the extract relevant pattern, text, gap penalty, and transition matrix information. In addition, the preproccesing has the alphabet bit mask precomputations function that is used by th bitwise algorithms.
 Inputs to the DP run command are as follows:
 1) A path to a file containing both the text and the pattern, each on its own line\\
