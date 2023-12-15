@@ -22,3 +22,5 @@ Example run: sh bitwise.sh file_path alphabet_path 2
 
 Compare.py handles testing runtimes on large files based on different k and m values. 
 To generate graphs, using sh doesn't seem to work, so running the file as normal should do the trick. 
+
+Relevant data is stored in the data folders, with the alphabet and standard scoring matrix located in extra_data and a trivial example in data. 
